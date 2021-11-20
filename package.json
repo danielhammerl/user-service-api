@@ -1,18 +1,17 @@
 {
-  "name": "@danielhammerl/eslint-config",
-  "version": "0.0.16",
-  "description": "My custom eslint config for every kind of JavaScript Project",
+  "name": "@danielhammerl/user-service-api",
+  "version": "0.0.1",
   "main": "./src/index.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielhammerl/eslint-config.git"
+    "url": "git+https://github.com/danielhammerl/user-service-api.git"
   },
   "author": "mail@danielhammerl.de",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danielhammerl/eslint-config/issues"
+    "url": "https://github.com/danielhammerl/user-service-api/issues"
   },
-  "homepage": "https://github.com/danielhammerl/eslint-config#readme",
+  "homepage": "https://github.com/danielhammerl/user-service-api#readme",
   "devDependencies": {
     "prettier": "^2.4.1"
   }
