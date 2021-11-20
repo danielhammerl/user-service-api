@@ -1,1 +1,4 @@
-export type Permission = 'admin' | 'readUser';
+export enum Permission {
+  ADMIN = 'admin',
+  READ_USER = 'readUser',
+}
