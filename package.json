@@ -1,0 +1,19 @@
+{
+  "name": "@danielhammerl/eslint-config",
+  "version": "0.0.15",
+  "description": "My custom eslint config for every kind of JavaScript Project",
+  "main": "./src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhammerl/eslint-config.git"
+  },
+  "author": "mail@danielhammerl.de",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielhammerl/eslint-config/issues"
+  },
+  "homepage": "https://github.com/danielhammerl/eslint-config#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
