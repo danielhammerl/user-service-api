@@ -6,6 +6,11 @@
     "type": "git",
     "url": "git+https://github.com/danielhammerl/user-service-api.git"
   },
+  "files": [
+    "src/",
+    "package.json",
+    "package-lock.json"
+  ],
   "author": "mail@danielhammerl.de",
   "license": "ISC",
   "bugs": {
