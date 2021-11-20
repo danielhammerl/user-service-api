@@ -1,6 +1,6 @@
 {
   "name": "@danielhammerl/user-service-api",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "./src/index.ts",
   "repository": {
     "type": "git",
