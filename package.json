@@ -1,16 +1,11 @@
 {
   "name": "@danielhammerl/user-service-api",
   "version": "1.0.2",
-  "main": "./src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielhammerl/user-service-api.git"
   },
-  "files": [
-    "src/",
-    "package.json",
-    "package-lock.json"
-  ],
+  "types": "index.d.ts",
   "author": "mail@danielhammerl.de",
   "license": "ISC",
   "bugs": {
