@@ -12,6 +12,9 @@
   "bugs": {
     "url": "https://github.com/danielhammerl/user-service-api/issues"
   },
+  "scripts": {
+    "build": "tsc"
+  },
   "homepage": "https://github.com/danielhammerl/user-service-api#readme",
   "devDependencies": {
     "prettier": "^2.4.1",
