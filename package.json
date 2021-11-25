@@ -5,14 +5,16 @@
     "type": "git",
     "url": "git+https://github.com/danielhammerl/user-service-api.git"
   },
-  "types": "index.d.ts",
   "author": "mail@danielhammerl.de",
   "license": "ISC",
+  "main": "build/index.js",
+  "types":  "build/index.d.ts",
   "bugs": {
     "url": "https://github.com/danielhammerl/user-service-api/issues"
   },
   "homepage": "https://github.com/danielhammerl/user-service-api#readme",
   "devDependencies": {
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2"
   }
 }
