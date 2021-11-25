@@ -13,7 +13,7 @@
     "url": "https://github.com/danielhammerl/user-service-api/issues"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "npm ci && tsc"
   },
   "homepage": "https://github.com/danielhammerl/user-service-api#readme",
   "devDependencies": {
