@@ -1,3 +1,3 @@
 @Library('danielhammerl-pipelines') _
 
-publishOnly();
+publishOnly(true);
