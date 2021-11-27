@@ -1,6 +1,7 @@
 export enum Permission {
   ADMIN = 'admin',
   READ_USER = 'readUser',
+  REGISTER_TO_PI_MONITORING_SERVER = 'register-to-pi-monitoring-server',
 }
 
 export interface User {
