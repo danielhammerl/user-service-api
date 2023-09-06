@@ -73,6 +73,7 @@
     "/auth/login": {
       "summary": "Used to get an access token by credentials",
       "post": {
+        "operationId": "login",
         "requestBody": {
           "required": true,
           "content": {
