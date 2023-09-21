@@ -20,7 +20,7 @@
   "homepage": "https://github.com/danielhammerl/user-service-api#readme",
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.7.0",
-    "prettier": "^2.5.1",
+    "prettier": "^3.0.0",
     "typescript": "^4.5.4",
     "rimraf": "^5.0.1"
   }
