@@ -5,13 +5,16 @@
     "version": "1.1.0"
   },
   "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
     "schemas": {
       "CredentialPair": {
         "type": "object",
-        "required": [
-          "email",
-          "password"
-        ],
+        "required": ["email", "password"],
         "properties": {
           "email": {
             "type": "string"
@@ -23,21 +26,11 @@
       },
       "Permission": {
         "type": "string",
-        "enum": [
-          "admin",
-          "readUser",
-          "register-to-pi-monitoring-server",
-          "read-pi-monitoring-status"
-        ]
+        "enum": ["admin", "readUser", "register-to-pi-monitoring-server", "read-pi-monitoring-status"]
       },
       "User": {
         "type": "object",
-        "required": [
-          "email",
-          "password",
-          "id",
-          "permissions"
-        ],
+        "required": ["email", "password", "id", "permissions"],
         "properties": {
           "email": {
             "type": "string"
@@ -74,6 +67,7 @@
       "summary": "Used to get an access token by credentials",
       "post": {
         "operationId": "login",
+        "tags": ["auth"],
         "requestBody": {
           "required": true,
           "content": {
