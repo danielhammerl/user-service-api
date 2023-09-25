@@ -13,7 +13,7 @@
     "url": "https://github.com/danielhammerl/user-service-api/issues"
   },
   "scripts": {
-    "generate:nodejs": "rimraf ./generated/nodejs && openapi-generator-cli generate -g typescript-fetch -i /local/spec/user-service-api.json -o /local/generated/nodejs --additional-properties=enumPropertyNaming=UPPERCASE",
+    "generate:nodejs": "rimraf ./generated/nodejs && openapi-generator-cli generate -g typescript-fetch -i ./spec/user-service-api.json -o /local/generated/nodejs --additional-properties=enumPropertyNaming=UPPERCASE",
     "compile": "rimraf ./build && tsc",
     "build": "npm run generate:nodejs && npm run compile"
   },
