@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "User Service API",
-    "version": "1"
+    "version": "2"
   },
   "components": {
     "securitySchemes": {
