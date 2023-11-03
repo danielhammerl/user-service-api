@@ -1,0 +1,27 @@
+{
+  "name": "@danielhammerl/user-service-api",
+  "version": "1.195.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhammerl/user-service-api.git"
+  },
+  "author": "mail@danielhammerl.de",
+  "license": "ISC",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/danielhammerl/user-service-api/issues"
+  },
+  "scripts": {
+    "generate:nodejs": "rimraf ./generated/nodejs && openapi-generator-cli generate -g typescript-fetch -i ./spec/user-service-api.json -o ./generated/nodejs --additional-properties=enumPropertyNaming=UPPERCASE",
+    "compile": "rimraf ./build && tsc",
+    "build": "npm run generate:nodejs && npm run compile && rimraf ./generated"
+  },
+  "homepage": "https://github.com/danielhammerl/user-service-api#readme",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "rimraf": "^5.0.1"
+  }
+}

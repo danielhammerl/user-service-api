@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "esModuleInterop": true,
+    "strict": true,
+    "allowJs": true,
+    "outDir": "build/",
+    "declaration": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "include": ["generated/**/*.ts"],
+  "exclude": ["node_modules"]
+}
