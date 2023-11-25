@@ -26,7 +26,13 @@
       },
       "Permission": {
         "type": "string",
-        "enum": ["admin", "readUser", "register-to-pi-monitoring-server", "read-pi-monitoring-status"]
+        "enum": [
+          "admin",
+          "readUser",
+          "register-to-pi-monitoring-server",
+          "read-pi-monitoring-status",
+          "read-shopping-list-items"
+        ]
       },
       "PartialUser": {
         "type": "object",
