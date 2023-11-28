@@ -133,6 +133,52 @@
         }
       }
     },
+    "/auth/login-long-living-token": {
+      "summary": "Used to get an access token by credentials which has a lifespan of 1 year",
+      "post": {
+        "operationId": "loginLongLivingToken",
+        "tags": ["auth"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CredentialPair"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login was successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    },
+                    "durationInSeconds": {
+                      "type": "number"
+                    },
+                    "userId": {
+                      "type": "string"
+                    },
+                    "permissions": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Permission"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/users": {
       "summary": "user endpoint",
       "get": {
