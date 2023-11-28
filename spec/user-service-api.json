@@ -31,8 +31,40 @@
           "readUser",
           "register-to-pi-monitoring-server",
           "read-pi-monitoring-status",
-          "read-shopping-list-items",
+          "read-shopping-list-items"
         ]
+      },
+      "TechnicalAuthTokenMeta": {
+        "type": "object",
+        "required": ["description", "permissions"],
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Permission"
+            }
+          }
+        }
+      },
+      "TechnicalAuthTokenAddResponse" : {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/TechnicalAuthTokenMeta"
+          }
+        ],
+        "properties": {
+          "token": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": ["description", "permissions", "token", "id"]
       },
       "PartialUser": {
         "type": "object",
@@ -128,6 +160,47 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/technical-auth-token": {
+      "summary": "Used to create or delete technical auth tokens",
+      "post": {
+        "operationId": "createTechnicalAuthToken",
+        "tags": ["technicalAuthToken"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TechnicalAuthTokenMeta"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TechnicalAuthTokenAddResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/technical-auth-token/:tokenId": {
+      "summary": "Used to create or delete technical auth tokens",
+      "delete": {
+        "operationId": "deleteTechnicalAuthToken",
+        "tags": ["technicalAuthToken"],
+        "responses": {
+          "204": {
+            "description": "Success"
           }
         }
       }
