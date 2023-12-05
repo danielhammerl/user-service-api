@@ -139,6 +139,7 @@
             "content": {
               "application/json": {
                 "schema": {
+                  "required": ["token","durationInSeconds", "userId", "permissions"],
                   "type": "object",
                   "properties": {
                     "token": {
