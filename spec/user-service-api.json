@@ -31,7 +31,8 @@
           "readUser",
           "register-to-pi-monitoring-server",
           "read-pi-monitoring-status",
-          "read-shopping-list-items"
+          "read-shopping-list-items",
+          "use-notify-me"
         ]
       },
       "TechnicalAuthTokenMeta": {
