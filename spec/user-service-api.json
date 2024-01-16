@@ -235,7 +235,7 @@
         }
       }
     },
-    "/technical-auth-token/:tokenId": {
+    "/technical-auth-token/{tokenId}": {
       "summary": "Used to create or delete technical auth tokens",
       "delete": {
         "operationId": "deleteTechnicalAuthToken",
@@ -295,7 +295,7 @@
         }
       }
     },
-    "/users/:userId": {
+    "/users/{userId}": {
       "get": {
         "operationId": "getUser",
         "tags": ["user"],
