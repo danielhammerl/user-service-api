@@ -50,7 +50,7 @@
           }
         }
       },
-      "TechnicalAuthTokenAddResponse" : {
+      "TechnicalAuthTokenAddResponse": {
         "type": "object",
         "allOf": [
           {
@@ -80,6 +80,12 @@
             "type": "string"
           },
           "id": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
             "type": "string"
           },
           "legacyObjectId": {
@@ -140,7 +146,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "required": ["token","durationInSeconds", "userId", "permissions"],
+                  "required": ["token", "durationInSeconds", "userId", "permissions"],
                   "type": "object",
                   "properties": {
                     "token": {
