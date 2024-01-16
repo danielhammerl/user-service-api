@@ -172,6 +172,40 @@
         }
       }
     },
+    "/auth/heartbeat": {
+      "summary": "Returns new access token when logged in",
+      "post": {
+        "operationId": "heartbeat",
+        "tags": ["auth"],
+        "responses": {
+          "200": {
+            "description": "Heartbeat was successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "required": ["userId", "permissions"],
+                  "type": "object",
+                  "properties": {
+                    "userId": {
+                      "type": "string"
+                    },
+                    "permissions": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Permission"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "not authenticated"
+          }
+        }
+      }
+    },
     "/technical-auth-token": {
       "summary": "Used to create or delete technical auth tokens",
       "post": {
