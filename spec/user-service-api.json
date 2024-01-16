@@ -240,6 +240,16 @@
       "delete": {
         "operationId": "deleteTechnicalAuthToken",
         "tags": ["technicalAuthToken"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "tokenId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
         "responses": {
           "204": {
             "description": "Success"
