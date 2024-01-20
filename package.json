@@ -1,6 +1,6 @@
 {
   "name": "@danielhammerl/user-service-api",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielhammerl/user-service-api.git"
