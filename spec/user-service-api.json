@@ -33,7 +33,8 @@
           "read-pi-monitoring-status",
           "read-shopping-list-items",
           "use-notify-me",
-          "use-gym-data"
+          "use-gym-data",
+          "gym-data-admin"
         ]
       },
       "TechnicalAuthTokenMeta": {
