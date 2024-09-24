@@ -34,7 +34,8 @@
           "read-shopping-list-items",
           "use-notify-me",
           "use-gym-data",
-          "gym-data-admin"
+          "gym-data-admin",
+          "use-home-catalog"
         ]
       },
       "TechnicalAuthTokenMeta": {
