@@ -16,6 +16,9 @@
         "type": "object",
         "required": ["email", "password"],
         "properties": {
+          "expiresIn": {
+            "type": "number"
+          },
           "email": {
             "type": "string"
           },
