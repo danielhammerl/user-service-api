@@ -16,7 +16,7 @@
         "type": "object",
         "required": ["email", "password"],
         "properties": {
-          "expiresIn": {
+          "tokenValidInHours": {
             "type": "number"
           },
           "email": {
